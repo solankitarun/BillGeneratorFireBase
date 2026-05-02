@@ -44,8 +44,9 @@ function App() {
         const storedUser = localStorage.getItem('user')
         if (storedUser) {
             setUser(JSON.parse(storedUser))
-            fetchData()
         }
+        // Always fetch data since we bypassed login
+        fetchData()
     }, [])
 
     const refreshData = async () => {

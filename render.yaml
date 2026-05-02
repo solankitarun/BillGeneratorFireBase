@@ -1,0 +1,13 @@
+services:
+  - type: web
+    name: bill-generator-backend
+    env: node
+    buildCommand: cd server && npm install
+    startCommand: cd server && npm start
+    envVars:
+      - key: PORT
+        value: 10000
+      - key: ALLOWED_ORIGINS
+        value: https://your-vercel-frontend-url.vercel.app # TODO: Update this
+      - key: NODE_VERSION
+        value: 20.x
