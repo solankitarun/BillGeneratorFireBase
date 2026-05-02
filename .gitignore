@@ -29,7 +29,7 @@ server/uploads/*
 server/.wwebjs_auth/
 server/.wwebjs_cache/
 
-# Legacy / Static files
-index.html
-script.js
-styles.css
+# Legacy / Static files (Root only)
+/index.html
+/script.js
+/styles.css
