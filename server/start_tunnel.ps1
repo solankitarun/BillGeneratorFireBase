@@ -15,5 +15,5 @@ Write-Host "Please wait a few seconds. A URL ending in '.trycloudflare.com' will
 Write-Host "Copy that URL and paste it into Vercel as your VITE_API_URL environment variable." -ForegroundColor Yellow
 Write-Host "================================================================" -ForegroundColor Yellow
 
-# Start the tunnel
-& $cloudflaredPath tunnel --url http://localhost:5000
+# Start the tunnel (Matching your PORT=5001 in .env)
+& $cloudflaredPath tunnel --url http://localhost:5001
